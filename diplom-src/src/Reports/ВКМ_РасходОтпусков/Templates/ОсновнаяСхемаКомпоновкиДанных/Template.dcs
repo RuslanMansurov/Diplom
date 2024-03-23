@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВКМ_ОтпускаСотрудников.ВКМ_Должность</dataPath>
+			<field>ВКМ_ОтпускаСотрудников.ВКМ_Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ВКМ_ОтпускаСотрудников</dataPath>
+			<field>ВКМ_ОтпускаСотрудников</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВКМ_ОтпускаСотрудников.ВКМ_Сотрудник</dataPath>
+			<field>ВКМ_ОтпускаСотрудников.ВКМ_Сотрудник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВКМ_ОтпускаСотрудников.ВКМ_ДнейОтпускаФакт</dataPath>
+			<field>ВКМ_ОтпускаСотрудников.ВКМ_ДнейОтпускаФакт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВКМ_ОтпускаСотрудников.ВКМ_ДнейОтпуска</dataPath>
+			<field>ВКМ_ОтпускаСотрудников.ВКМ_ДнейОтпуска</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВКМ_ГрафикОтпусков.ВКМ_ОтпускаСотрудников.(
+		ВКМ_Должность КАК ВКМ_Должность,
+		ВКМ_Сотрудник КАК ВКМ_Сотрудник,
+		ВКМ_ДнейОтпуска КАК ВКМ_ДнейОтпуска,
+		ВКМ_ДнейОтпускаФакт КАК ВКМ_ДнейОтпускаФакт
+	) КАК ВКМ_ОтпускаСотрудников
+ИЗ
+	Документ.ВКМ_ГрафикОтпусков КАК ВКМ_ГрафикОтпусков</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВКМ_ОтпускаСотрудников.ВКМ_Должность</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВКМ_ОтпускаСотрудников.ВКМ_Сотрудник</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИО сотрудника</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВКМ_ОтпускаСотрудников.ВКМ_ДнейОтпуска</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дней отпуска (план)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВКМ_ОтпускаСотрудников.ВКМ_ДнейОтпускаФакт</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дней отпуска (факт)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

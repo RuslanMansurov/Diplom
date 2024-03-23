@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6492e8c7-bbf7-4e67-ada6-608718455fb6">
+  <producedTypes>
+    <objectType typeId="2ae5f32c-2d44-4f08-b72e-fae8e88a8388" valueTypeId="6a1cb655-86d2-4290-b1b7-4f8da32a0ca3"/>
+    <managerType typeId="e109335d-aa9b-4a88-b170-0966d3c57267" valueTypeId="d76cf9d0-5735-4eab-83f7-5fb8633b0a85"/>
+  </producedTypes>
+  <name>ВКМ_МассовоеСозданиеАктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Массовое создание актов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_МассовоеСозданиеАктов.Form.ВКМ_ФормаОбработкиМассовоеСоздание</defaultForm>
+  <tabularSections uuid="e283b3e4-e407-4cdf-93d8-43a6bdbd569b">
+    <producedTypes>
+      <objectType typeId="81624561-fb2f-4e2c-be78-c67100db91f2" valueTypeId="bf9183cd-ed51-4fc4-9d5a-6bf36130c579"/>
+      <rowType typeId="c152c07d-1f43-4e72-a3bf-fed7d9034d7b" valueTypeId="6207dd8c-ce6d-4df9-b0af-47bbfc7cf081"/>
+    </producedTypes>
+    <name>ВКМ_ДоговорыАбонентскогоОбслуживания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договоры абонентского обслуживания</value>
+    </synonym>
+    <attributes uuid="e0a314e0-3fee-43de-a766-f710d7c4ab07">
+      <name>ВКМ_СписокДоговоровАбонентскогоОбслуживания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Список договоров абонентского обслуживания</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДоговорыКонтрагентов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8cfce18f-6136-488b-be36-76f0601baede">
+      <name>ВКМ_СсылкиНаРеализации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылки на реализации</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.РеализацияТоваровУслуг</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="84d42543-f068-4026-8ad2-f91c00ca12ff">
+    <name>ВКМ_ФормаОбработкиМассовоеСоздание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки массовое создание</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

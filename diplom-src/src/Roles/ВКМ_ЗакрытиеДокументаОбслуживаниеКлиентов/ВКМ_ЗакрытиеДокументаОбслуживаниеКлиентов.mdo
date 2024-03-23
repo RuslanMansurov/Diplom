@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4bd0bce-4753-47c3-a87e-58b7f11900f9">
+  <name>ВКМ_ЗакрытиеДокументаОбслуживаниеКлиентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытие документа обслуживание клиентов</value>
+  </synonym>
+</mdclass:Role>
