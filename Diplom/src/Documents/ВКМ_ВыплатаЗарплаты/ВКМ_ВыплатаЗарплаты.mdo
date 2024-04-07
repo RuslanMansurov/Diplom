@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1f809cd8-8541-4a7a-9cc1-88d74da70d81">
+  <producedTypes>
+    <objectType typeId="9356b94a-e2a3-4f16-9f03-42e6963f4823" valueTypeId="15d6092e-c228-4b69-88e8-d98c32448bcf"/>
+    <refType typeId="25e7549d-705a-4a48-b725-0ad83776217f" valueTypeId="41268080-9a38-4948-bd9d-58324a1f707d"/>
+    <selectionType typeId="7c211365-4925-4b93-8361-81028fdf80f0" valueTypeId="9ee18290-46bc-44ed-a79b-56d85691fd9e"/>
+    <listType typeId="ce45ff1b-4908-47a1-b1ac-2c63ae55fbc7" valueTypeId="97f7709e-3b69-4427-a8cd-91988b7848f2"/>
+    <managerType typeId="e64d13bf-1d21-4036-80ff-2537f0c2e899" valueTypeId="f5745edc-53e6-4b6f-82c9-47306706ce21"/>
+  </producedTypes>
+  <name>ВКМ_ВыплатаЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выплата зарплаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_ВыплатаЗарплаты.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_ВыплатаЗарплаты.Form.ВКМ_ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="adbd5fde-86e2-4e37-8900-c10da695d3aa">
+    <name>ВКМ_ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="de7d6e2c-0c62-491f-901f-be4c2a5ac377">
+    <producedTypes>
+      <objectType typeId="7b8a9b75-584b-40a0-bf70-a283fe2d0cf7" valueTypeId="b90910c7-5774-4926-9290-fcf79dfe8e62"/>
+      <rowType typeId="1edbfcb6-ec51-4105-b66b-9faa2ba3fa1d" valueTypeId="f216092e-7e20-4e6c-8d10-c3e0cfdb1fc4"/>
+    </producedTypes>
+    <name>ВКМ_Выплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выплаты</value>
+    </synonym>
+    <attributes uuid="88d925f2-e0b5-420c-b516-41db30188ba3">
+      <name>ВКМ_Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ba41c9a1-0296-459b-acf7-955ffbfc4476">
+      <name>ВКМ_ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="376a1795-2b46-43c6-85ab-5231ed1be152">
+      <name>ВКМ_Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

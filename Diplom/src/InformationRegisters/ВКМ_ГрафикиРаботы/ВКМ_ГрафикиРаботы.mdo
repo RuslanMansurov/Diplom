@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b2e68c4d-c257-44f2-bc63-38b4a0f99c0e">
+  <producedTypes>
+    <selectionType typeId="72c095fd-7e73-42b2-b6c9-01ee28977be4" valueTypeId="ca89e1d9-e172-40e4-ae80-ea2e1708e49b"/>
+    <listType typeId="0b248458-db13-40ba-9ff2-72c59d427899" valueTypeId="e42e8d63-5eac-4021-8649-33203d535ba4"/>
+    <managerType typeId="7174ec1b-5bf3-46fa-86b0-ced4daac4ead" valueTypeId="b494e875-137f-4e4c-b842-865e4b5a817b"/>
+    <recordSetType typeId="e6cacebd-6a17-4e0c-bb70-e42c6b6c7cd3" valueTypeId="0104fb49-af00-4ec2-983e-e23bc8da091b"/>
+    <recordKeyType typeId="addca467-0033-4a7c-a3f9-1cf86cf1be12" valueTypeId="564f09f4-3434-440a-be73-40898da241ac"/>
+    <recordType typeId="a3ee9ef7-5572-4c1b-b721-ab5bae318755" valueTypeId="f73c2c96-0341-4bcf-b2cf-b9272f44f63c"/>
+    <recordManagerType typeId="0f7f7723-e717-4deb-9a07-517ffe683724" valueTypeId="ee6fa02a-22d4-41a4-98b4-c2c2f5e776e5"/>
+  </producedTypes>
+  <name>ВКМ_ГрафикиРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Графики работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a8a0dac3-b72c-4e3c-88db-1d2b6664dbe1">
+    <name>ВКМ_Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВКМ значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c3bc6754-be9f-4b85-9a2f-c97752c52e77">
+    <name>ВКМ_ГрафикРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_ГрафикиРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9f1872c6-87cc-4053-bcdf-5c17bc40b009">
+    <name>ВКМ_Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

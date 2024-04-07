@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41f7c459-4dd1-49fd-952e-db432b6884f2">
+  <name>ВКМ_ДобавленныеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавленные объекты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ДоговорыКонтрагентов</content>
+  <content>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</content>
+  <content>Constant.ВКМ_ТокенУправленияТелеграммБотом</content>
+  <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
+  <content>Document.ВКМ_ОбслуживаниеКлиента</content>
+  <content>Document.ВКМ_НачисленияЗарплаты</content>
+  <content>Document.ВКМ_НачислениеФиксированнойПремии</content>
+  <content>Document.ВКМ_ВыплатаЗарплаты</content>
+  <content>Document.ВКМ_ГрафикОтпусков</content>
+  <content>Report.ВКМ_РасчетыССотрудниками</content>
+  <content>Report.ВКМ_ВыработкаСпециалистов</content>
+  <content>Report.ВКМ_РасходОтпусков</content>
+  <content>Report.ВКМ_АнализВыставленныхАктов</content>
+  <subsystems>ВКМ_ОбслуживаниеКлиентов</subsystems>
+  <subsystems>ВКМ_РасчетУправленческойЗарплаты</subsystems>
+</mdclass:Subsystem>
